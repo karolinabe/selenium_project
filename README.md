@@ -15,7 +15,7 @@ Steps:
 3. In the "First name" field put valid name e.g. Joanna.
 4. In the "Last name" field put valid last name e.g. Pasek.
 5. In the "Email address" field put an user name including some unallowable characters e.g. joanna$$$.
-6. In the "Passoword" field put valid password.
+6. In the "Password" field put valid password.
 7. From drop-down list of country codes choose a code e.g. Poland (+48).
 8. In the "Moblie phone number" field put valid phone number e.g. 789789789.
 9. From the "Birth Month" drop-down list choose some month.
