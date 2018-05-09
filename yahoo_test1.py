@@ -11,7 +11,6 @@ class YahooRegistration(unittest.TestCase):
         profile = webdriver.FirefoxProfile()
         profile.set_preference("intl.accept_languages", "en_US")
         self.driver=webdriver.Firefox(profile)
-        self.driver=webdriver.Firefox()
         self.driver.maximize_window()
         self.driver.get("https://www.yahoo.com/")
         self.driver.implicitly_wait(5)
@@ -35,6 +34,7 @@ class YahooRegistration(unittest.TestCase):
         gender_choose = driver.find_element_by_xpath('//ul[@id="reg-gender-list"]/li[1]').click()
         continue_button = driver.find_element_by_id("reg-submit-button").click()
         error_notice = driver.find_element_by_id("reg-error-yid")
+        # .encode('utf-8') -> to avoid UnicodeEncodeError
         print(error_notice.text.encode('utf-8'))
         self.assertEqual(error_notice.text, u"You can only use letters, numbers, periods (‘.’), and underscores (‘_’) in your username.")
         sleep(5)
