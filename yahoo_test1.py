@@ -35,7 +35,7 @@ class YahooRegistration(unittest.TestCase):
         gender_choose = driver.find_element_by_xpath('//ul[@id="reg-gender-list"]/li[1]').click()
         continue_button = driver.find_element_by_id("reg-submit-button").click()
         error_notice = driver.find_element_by_id("reg-error-yid")
-        print(error_notice.text)
+        print(error_notice.text.encode('utf-8'))
         self.assertEqual(error_notice.text, u"You can only use letters, numbers, periods (‘.’), and underscores (‘_’) in your username.")
         sleep(5)
 
