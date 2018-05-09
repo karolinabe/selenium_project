@@ -7,6 +7,10 @@ from time import sleep
 
 class YahooRegistration(unittest.TestCase):
     def setUp(self):
+        # setting up Firefox language preferences
+        profile = webdriver.FirefoxProfile()
+        profile.set_preference("intl.accept_languages", "en_US")
+        self.driver=webdriver.Firefox(profile)
         self.driver=webdriver.Firefox()
         self.driver.maximize_window()
         self.driver.get("https://www.yahoo.com/")
