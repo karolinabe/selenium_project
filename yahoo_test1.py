@@ -17,6 +17,10 @@ class YahooRegistration(unittest.TestCase):
 
     def test_invalid_username(self):
         driver = self.driver
+        #temporary page about RODO
+        rodo = driver.find_element_by_xpath('//input[@class="btn btn-primary agree"]')
+        rodo.location_once_scrolled_into_view
+        rodo.click()
         register = driver.find_element_by_id("uh-mail-link").click()
         sign_up = driver.find_element_by_id("createacc").click()
         first_name = driver.find_element_by_id("usernamereg-firstName").send_keys("Joanna")
