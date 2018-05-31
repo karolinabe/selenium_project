@@ -10,7 +10,10 @@ Preconditions:
 Browser open on page "https://www.yahoo.com". No user signed in.
 
 Steps:
-1. On https://www.yahoo.com click "Mail".
+Steps:
+1. Open https://www.yahoo.com
+    (1a. On temporary page about RODO click "Agree")
+     1b. On main page yahoo.com click "Sign in".
 2. Click "Sign up".
 3. In the "First name" field put valid name e.g. Joanna.
 4. In the "Last name" field put valid last name e.g. Pasek.
@@ -25,5 +28,5 @@ Steps:
 13. Click "Continue".
 
 Expecting results:
-Registration fail. 
+Registration fail.
 Under the "Email Address" field appears following statement: "You can only use letters, numbers, periods (‘.’), and underscores (‘_’) in your username."
