@@ -1,5 +1,5 @@
 setup:
-        pip install selenium
+	pip install selenium
 
 test:
-        python yahoo_test1.py
+	python yahoo_test1.py
